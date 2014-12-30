@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>check my flow, and check my js</p>
+
+
+<p type="text" id="tester" onclick="test()">press this NOW!</p>
+
+<script>
+function test() {
+  var element = document.getElementById('tester');
+  var newtext = "I can make bad boys good for the weekend";
+  if (element.innerHTML == "press this NOW!"){
+    document.getElementById("tester").innerHTML = newtext;
+  }
+  else if (element.innerHTML == "I can make bad boys good for the weekend"){
+    document.getElementById("tester").innerHTML = "press this NOW!";
+  }
+}
+</script>
+
+
+
+</body>
+</html>
